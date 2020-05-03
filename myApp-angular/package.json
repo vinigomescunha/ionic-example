@@ -12,9 +12,9 @@
     "e2e": "ng e2e",
     "generate-resources": "cordova-res --skip-config --copy",
     "build-platforms": "npm run build;npx cap add android; npx cap add ios;npx cap add electron;",
-    "electron": "npm run generate-resources;npm run build-platforms && npx cap copy; && npx cap open electron",
-    "ios": "npx cap copy ios;npx cap open ios",
-    "android": "npx cap copy ios;npx cap open android"
+    "electron": "npm run generate-resources;npm run build-platforms; npx cap copy; npx cap open electron",
+    "ios": "npm run generate-resources;npm run build-platforms;npx cap copy ios;npx cap open ios",
+    "android": "npm run generate-resources;npm run build-platforms;npx cap copy android;npx cap open android"
   },
   "private": true,
   "dependencies": {
